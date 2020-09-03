@@ -2,15 +2,15 @@
 Deep dive into the resource usage of containers using Google's cAdvisor tool
 
 ## Install docker - see whale in your status bar?
-$ docker --version
-$ docker-compose --version
+$ docker --version\
+$ docker-compose --version\
 $ docker-machine --version
 
 ## Run a Dockerized web server to make sure everything works:
 $ docker run -d -p 80:80 --name webserver nginx
 
 ## Pull and run hello-world container from docker hub
-$ docker pull hello-world
+$ docker pull hello-world\
 $ docker run hello-world
 
 ## You can specify a name for the container. “hello-world” above is the image name.
@@ -20,7 +20,7 @@ $ docker pull --name=hello-world hello-world
 $ docker ps -a
 
 ## Pull and run cAdvisor:
-$ docker pull google/cadvisor
+$ docker pull google/cadvisor\
 $ docker run --volume=/var/run:/var/run:rw --volume=/sys:/sys:ro \--volume=/var/lib/docker:/var/lib/docker:ro --publish=8080:8080 \--detach=true --name=cadvisor google/cadvisor:latest
 
 ## Open Firefox web browser and browse the following location:
