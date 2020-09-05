@@ -11,6 +11,7 @@ $ docker-compose --version\
 ~~$ docker-machine --version~~
 
 ## Run a Dockerized web server to make sure everything works:
+### Do you see nginx webserver running on port 80? Try typing localhost on your browser.
 $ docker run -d -p 80:80 --name webserver nginx
 
 ## Pull and run hello-world container from docker hub
