@@ -11,12 +11,12 @@ $ docker-compose --version\
 
 ## Run a Dockerized web server to make sure everything works:
 $ docker run -d -p 80:80 --name webserver nginx
-### Do you see nginx webserver running on port 80? Try typing `localhost` on your browser.
+### Do you see nginx webserver running on port 80? Try typing *localhost* on your browser.
 
 ## Pull and run hello-world container from docker hub
 $ docker pull hello-world\
 $ docker run hello-world
-### The hello-world container exits after printing a `Hello from Docker!` message.
+### The hello-world container exits after printing a *Hello from Docker!* message.
 
 ## List all Docker containers:
 $ docker ps -a
