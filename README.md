@@ -1,13 +1,14 @@
 # docker-google-cadvisor
 Deep dive into the resource usage of containers using Google's cAdvisor tool
 
-## Install docker - see whale in your status bar?
+## Install docker
+### Then launch the Docker Desktop. Give privileged access.
 $ brew cask install docker
 
 ## Check versions of Docker Engine, Compose, and Machine.
 $ docker --version\
 $ docker-compose --version\
-$ docker-machine --version
+~~$ docker-machine --version
 
 ## Run a Dockerized web server to make sure everything works:
 $ docker run -d -p 80:80 --name webserver nginx
