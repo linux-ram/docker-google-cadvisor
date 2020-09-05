@@ -2,6 +2,9 @@
 Deep dive into the resource usage of containers using Google's cAdvisor tool
 
 ## Install docker - see whale in your status bar?
+[Download Docker](https://download.docker.com/mac/beta/Docker.dmg)
+
+## Check versions of Docker Engine, Compose, and Machine.
 $ docker --version\
 $ docker-compose --version\
 $ docker-machine --version
