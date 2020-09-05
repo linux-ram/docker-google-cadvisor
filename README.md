@@ -32,7 +32,7 @@ http://localhost:8080
 ## Lets create a container named “ubuntu1” that intentionally causes a spike on core 0:
 $ docker run -d --cpuset-cpus=0 --name=ubuntu1 ubuntu /bin/dd if=/dev/zero of=/dev/null
 ### See the spike?
-![](image1.png)
+<img src="image1.png" width="800">
 
 $ docker stop ubuntu1
 ### You should observe that ubuntu1 has exited. And, isn't CPU core usage back to normal now?
