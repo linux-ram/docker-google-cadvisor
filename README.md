@@ -2,8 +2,8 @@
 Deep dive into the resource usage of containers using Google's cAdvisor tool
 
 ## Install docker
-### Then launch the Docker Desktop. Give privileged access.
 $ brew cask install docker
+### Next, launch the Docker Desktop. Give privileged access.
 
 ## Check versions of Docker Engine, Compose, and Machine.
 $ docker --version\
@@ -11,8 +11,8 @@ $ docker-compose --version\
 ~~$ docker-machine --version~~
 
 ## Run a Dockerized web server to make sure everything works:
-### Do you see nginx webserver running on port 80? Try typing localhost on your browser.
 $ docker run -d -p 80:80 --name webserver nginx
+### Do you see nginx webserver running on port 80? Try typing localhost on your browser.
 
 ## Pull and run hello-world container from docker hub
 $ docker pull hello-world\
