@@ -58,7 +58,7 @@ d. Cgroups (Control Groups) limit the amount of resources a process can consume.
 - Startup and tear down of VMs very slow - in the order of a microsecond.
 - Docker Engine essentially does provisioning the containers. Containers running don’t go through the Docker engine at runtime. Docker image on VM vs container environment.
 - !Back storage driver vs Host file system
-	Just one back storage driver is needed to enable multiple containers.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * Just one back storage driver is needed to enable multiple containers.
 - By definition, a container needs at least one process running inside. That process ID (though different from inside the container) is unique in the host.
 
 ## Day 2:
