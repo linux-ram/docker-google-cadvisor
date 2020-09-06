@@ -7,7 +7,7 @@ $ brew cask install docker
 
 ## Check versions of Docker Engine, Compose, and Machine.
 $ docker --version\
-$ docker-compose --version\
+$ docker-compose --version
 
 ## Run a Dockerized web server to make sure everything works:
 $ docker run -d -p 80:80 --name webserver nginx
