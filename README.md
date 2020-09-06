@@ -20,6 +20,7 @@ $ docker run hello-world
 
 ## List all Docker containers:
 $ docker ps -a
+### You will see 12-digit hexadecimal CONTAINER ID values 
 
 ## Pull and run cAdvisor:
 $ docker pull google/cadvisor\
