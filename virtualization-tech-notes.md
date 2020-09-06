@@ -1,22 +1,23 @@
 ## Day 1:
 
-- Implementation of namespaces, control groups, chroot (3 features) in Linux kernel is what enables Containers.
-	a.Containers are just normal Linux Processes with additional configuration applied.
-	b.The concept of namespaces is to limit what processes can see and access certain parts of the system, such as other network interfaces 	or processes.
-	When a container is started, the container runtime, such as Docker, will create new namespaces to sandbox the process. By running a 		process in it's own Pid namespace, it will look like it's the only process on the system.
-	The available namespaces are:
-		Mount (mnt)
-		Process ID (pid)
-		Network (net)
-		Interprocess Communication (ipc)
-		UTS (hostnames)
-		User ID (user
-		Control group (cgroup)
-	c.Chroot provides the ability for a process to start with a different root directory to the parent OS. This allows different files to appear in the 	root.
-	d. CGroups (Control Groups) limit the amount of resources a process can consume.
-	These concepts are prevalent in Unix variants. As a result, Windows support for Docker is poor - you run containers in a VM(!) which defeats the purpose of Dockers. 
-	The Unix variants (FreeBSD, other Linux distros) are all clones on Unix - this means system call interoperability isn’t an issue.	
-	So, a docker built on macOS (BSD based) will run on Linux.
+- Implementation of namespaces, control groups, chroot (3 features) in Linux kernel is what enables Containers.\
+a. Containers are just normal Linux Processes with additional configuration applied.\
+b. The concept of namespaces is to limit what processes can see and access certain parts of the system, such as other network interfaces or processes.\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When a container is started, the container runtime, such as Docker, will create new namespaces to sandbox the process.\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;By running a process in it's own Pid namespace, it will look like it's the only process on the system.\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The available namespaces are:\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Mount (mnt)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Process ID (pid)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Network (net)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Interprocess Communication (ipc)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* UTS (hostnames)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* User ID (user)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Control group (cgroup)\
+c. Chroot provides the ability for a process to start with a different root directory to the parent OS. This allows different files to appear in the root.\
+d. Cgroups (Control Groups) limit the amount of resources a process can consume.\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;These concepts are prevalent in Unix variants. As a result, Windows support for Docker is poor - you run containers in a VM(!) which defeats the purpose of Dockers.\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Unix variants (FreeBSD, other Linux distros) are all clones on Unix - this means system call interoperability isn’t an issue.\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;So, a docker built on macOS (BSD based) will run on Linux.
 - Linux Containers/Docker technically speaking is not a virtualization technology. They run natively on the Host OS. More a OS virtualization.
 - A Docker image is a private file system just for your container. It provides all the files and code your container needs. Running a container launches your application with private resources, securely isolated from the rest of your machine. Save and share your image on Docker Hub to enable other users to easily download and run the image on any destination machine.
 - LXC, pronounced LexC (Canonical, Ltd. who make Ubuntu)
