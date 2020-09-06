@@ -15,7 +15,7 @@ b. The concept of namespaces is to limit what processes can see and access certa
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Control group (cgroup)\
 c. Chroot provides the ability for a process to start with a different root directory to the parent OS. This allows different files to appear in the root.\
 d. Cgroups (Control Groups) limit the amount of resources a process can consume.\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;These concepts are prevalent in Unix variants. As a result, Windows support for Docker is poor - you run containers in a VM(!) which defeats the purpose of Dockers.\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;These concepts are prevalent in Unix variants. As a result, Windows support for Docker is poor. You run containers in a VM(!) which defeats the purpose of Dockers.\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Unix variants (FreeBSD, other Linux distros) are all clones on Unix.\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This means system call interoperability isn’t an issue.\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;So, a docker built on macOS (BSD based) will run on Linux.
