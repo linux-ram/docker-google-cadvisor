@@ -23,7 +23,6 @@ d. Cgroups (Control Groups) limit the amount of resources a process can consume.
 - Linux Containers/Docker technically speaking is not a virtualization technology. They run natively on the Host OS. More a OS virtualization.
 - A Docker image is a private file system just for your container. It provides all the files and code your container needs. Running a container launches your application with private resources, securely isolated from the rest of your machine. Save and share your image on Docker Hub to enable other users to easily download and run the image on any destination machine.
 - LXC, pronounced LexC (Canonical, Ltd. who make Ubuntu)
-
 - “K8s is user space application
 - Montevista is an embedded Linux distro based in Bay Area, 1999, 
 - Cisco is big on x86 for a long time
@@ -46,7 +45,6 @@ d. Cgroups (Control Groups) limit the amount of resources a process can consume.
 - Vagrant is lightweight Virtualbox.
 - Sonic is Microsoft Linux distro for routers/switches/data-centers.
 - US Defense stuck with Windows - IT old-school, apprehensive of security with Linux
-
 - Hypervisor based VM <-> System based containers (needs a full rootfs) <-> docker containers (or lightweight containers). These 3 can coexist in a system.
 - The hypervisor on which the VM runs fools the OS - makes for HW abstraction layer.
 - Containers (Docker, LXC, KVM) run natively on the OS. That’s why they give good performance. You cannot install OS on the container. Docker runs a single application usually out-of-the-box.
@@ -56,7 +54,6 @@ d. Cgroups (Control Groups) limit the amount of resources a process can consume.
 - Control groups control resources allocated to namespaces. cgroup can control Kernel subsystems which in turn control resources on the system.
 - Chroot makes the container think it has its own root filesystem (starting with root) that way it doesn’t look outside
 - If you are a native process/container with root permissions you can access all the resources of all other containers.
-
 - VMs are heavy - every VM has its own copy of the OS - heavy - but, that’s an advantage as well. VMs can also share resources like containers, but needs more work (unlike the containers) enabling that.
 - Startup and tear down of VMs very slow - in the order of a microsecond.
 - Docker Engine essentially does provisioning the containers. Containers running don’t go through the Docker engine at runtime. Docker image on VM vs container environment.
