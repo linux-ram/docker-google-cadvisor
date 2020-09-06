@@ -57,7 +57,7 @@ d. Cgroups (Control Groups) limit the amount of resources a process can consume.
 - VMs are heavy - every VM has its own copy of the OS - heavy - but, that’s an advantage as well. VMs can also share resources like containers, but needs more work (unlike the containers) enabling that.
 - Startup and tear down of VMs very slow - in the order of a microsecond.
 - Docker Engine essentially does provisioning the containers. Containers running don’t go through the Docker engine at runtime. Docker image on VM vs container environment.
-- !Back storage driver vs Host file system
+- !Back storage driver vs Host file system\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * Just one back storage driver is needed to enable multiple containers.
 - By definition, a container needs at least one process running inside. That process ID (though different from inside the container) is unique in the host.
 
@@ -88,7 +88,7 @@ d. Cgroups (Control Groups) limit the amount of resources a process can consume.
 - DPDK is available for both x86 and arm.
 - Tetration - network analytics - deep network inspection - $0.5 million - expensive Cisco solution
 - FD.io (“Fido”) is Vector Packet Processing software solution from Cisco. But poor documentation. FD.io blows DPDK of the water in terms of throughput.
-- DPDK might help FD.io. Now Ligato, a combo of  FD.io+ DPDK.
+- DPDK might help FD.io. Now Ligato, a combo of FD.io+ DPDK.
 - Software arm of arm.
 - Jeff Bezos coined the term “two-pizza-teams”. Gave birth for the notion of microservices.
 - Small Linux distros: busybox > puppy linux > DSL (damn small linux)
