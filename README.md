@@ -1,7 +1,7 @@
 # docker-google-cadvisor
 A deep dive into the resource usage of containers using Google's cAdvisor tool
 
-## Install docker
+## Install Docker
 $ brew cask install docker
 ### Next, launch the Docker Desktop. Give privileged access.
 
